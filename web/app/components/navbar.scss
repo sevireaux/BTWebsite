@@ -1,0 +1,228 @@
+.app__navbar {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    position: fixed;
+    background: #F9F9F9;
+    box-shadow: 0 0 35.4px #FFFFFF;
+    z-index: 2;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    
+    .app__navbar-links{
+        display: flex;
+        gap: 2rem;
+        width: 50%;
+        justify-content: right;
+        li {
+            display: grid;
+             list-style-type: none;
+             place-content: center;
+             margin: 0;
+
+            a {
+                position: relative;
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+                letter-spacing: 0.5px;
+                padding: 0 ;
+                font-family: "Kavivanar", cursive;
+                font-weight: 400;
+                font-style: normal;
+
+            }
+            a:after {
+                content: '';
+                position: absolute;
+                background-color: black;
+                height: 2px;
+                width: 0;
+                left: 50%;
+                bottom: -10px;
+                transform: translateX(-50%);
+
+                transition: 0.3s;
+            }
+            a:hover {
+                color: rgb(235, 139, 29);
+            }
+            a:hover:after {
+                width: 100%;
+
+            }
+        }
+            .app__logcart {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        width: 15%;
+        justify-content: right;
+        margin-left: 10%;
+
+        .app__button{
+            border-radius: 10px;
+            width: 75px;
+            height: 20px;
+            border: 0;
+            background-color: rgb(121, 78, 47);
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                color: white;
+                font-size: 14px;
+            }
+        }
+        .app__button:hover {
+            background-color: chocolate;
+            transition: 0.3s ease-in-out;
+        }
+    }
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+}
+    }
+
+.app__logo {
+    img {
+        height: 100px;
+    }
+    cursor: pointer;
+}
+
+.app__navbar-menu {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #101828;
+    
+    svg {
+        width: 70%;
+        height: 70%;
+        color: #F9F9F9;
+
+    }
+
+    .Motion {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 1rem;
+        width: 80%;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+        background: #FFFFFF;
+        background-size: cover;
+        background-repeat: repeat;
+        box-shadow: 0 0 35.4px #FFFFFF;
+
+        svg {
+            width: 35px;
+            height: 35px;
+            margin: 0.5rem 1rem;
+            color: #101828;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
+            div {
+                margin-top: 10%;
+                height: 30%;
+                padding-bottom: 1rem;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 1rem;
+
+                button {
+                    border-radius: 10px;
+                    width: 75px;
+                    height: 20px;
+                    border: 0;
+                    background-color: rgb(121, 78, 47);
+
+                    a {
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: white;
+                        font-size: 14px;
+                        }
+                    }
+                button:hover {
+                    background-color: chocolate;
+                    transition: 0.3s ease-in-out;
+                    }
+            }
+            li {
+                margin: 1rem;
+
+                a {
+                position: relative;
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+                letter-spacing: 0.5px;
+                padding: 0 ;
+                font-family: "Kavivanar", cursive;
+                font-weight: 400;
+                font-style: normal;
+
+                }
+                a:after {
+                    content: '';
+                    position: absolute;
+                    background-color: black;
+                    height: 2px;
+                    width: 0;
+                    left: 50%;
+                    bottom: -10px;
+                    transform: translateX(-50%);
+
+                    transition: 0.3s;
+                }
+                a:hover {
+                color: rgb(235, 139, 29);
+                }
+                a:hover:after {
+                width: 100%;
+
+            }
+
+                
+            }
+        }
+
+        @media screen and (min-width: 900px) {
+        display: none;
+        }
+
+    }
+
+    @media screen and (min-width: 900px) {
+        display: none;
+    }
+}
